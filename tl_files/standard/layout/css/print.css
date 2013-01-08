@@ -1,9 +1,9 @@
 @media print {
   
   * {
-	margin:0;
-	padding:0;
-	border:0;
+    margin:0;
+    padding:0;
+    border:0;
   }
   
   html, body, div, span, applet, object, iframe,
@@ -13,22 +13,22 @@
   small, strike, sub, sup, tt, var,
   dl, dt, dd, ol, ul, li,
   fieldset, form, label, legend {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
   }
   
   img, object {
-	display:block;
-	margin:0;
-	padding:0;
-	border:0;
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
   }
   
   body {
@@ -69,21 +69,21 @@
     text-decoration:none;
     background-color:transparent;
   }
-	
+
   a[href]:after {
     content:" <"attr(href)"> ";
     background-color:inherit;
     font-style:italic;
     font-size:9pt;
   } 
-	
+
   *[name]:after {
     content:" [#"attr(name)"]";
     background-color:inherit;
     font-style:italic;
     font-size:0.7em;
   } 
-	
+
   *[title]:after {
     content:" ("attr(title)") ";
     background-color:inherit;
@@ -110,7 +110,7 @@
   .mod_customnav,
   .mod_sitemap,
   .pagination {
-	display:none;
+    display:none;
   }
   
   #main {

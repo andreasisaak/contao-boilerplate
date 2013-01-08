@@ -1,7 +1,7 @@
 @media screen, projection {
   
   body {
-	font:normal 12px/1.5em Arial, Helvetica, sans-serif;
+    font:normal 12px/1.5em Arial, Helvetica, sans-serif;
     -webkit-text-size-adjust: none;
   }
   
@@ -12,16 +12,16 @@
   */
 
   a {
-	color:#000;
-	text-decoration:underline;
+    color:#000;
+    text-decoration:underline;
   }
 
   a:hover { 
-	text-decoration:none; 
+    text-decoration:none; 
   }
   
   input, textarea, select {
-	font:normal 12px/1.5em Arial, Helvetica, sans-serif;
+    font:normal 12px/1.5em Arial, Helvetica, sans-serif;
   }
 
   input[type="text"]:focus, 
