@@ -1,0 +1,21 @@
+@media screen, projection {
+
+  .nobr { 
+    white-space:nowrap;
+  }
+
+ /*------------------------------------------------------------------------*/
+  
+ /**
+  * Mobile helper class
+  */
+
+  .hide-mobile {
+    display:none;
+  }
+
+  .show-mobile {
+    display:none;
+  }
+
+}
