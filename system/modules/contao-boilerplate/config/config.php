@@ -64,3 +64,4 @@ $GLOBALS['TL_CONFIG']['css_embed_images']           = 0;
 
 $GLOBALS['TL_CONFIG']['piwik_blacklist']            = 'a:3:{i:0;a:1:{s:3:"url";s:16:"http://127.0.0.1";}i:1;a:1:{s:3:"url";s:20:"http://192.168.19.42";}i:2;a:1:{s:3:"url";s:29:"http://preview.men-at-work.de";}}';
 $GLOBALS['TL_CONFIG']['inactiveModules']            = 'a:6:{i:0;s:8:"calendar";i:1;s:8:"comments";i:2;s:3:"faq";i:3;s:10:"newsletter";i:4;s:4:"news";i:5;s:5:"tasks";}';
+$GLOBALS['TL_CONFIG']['manipulateTemplates']        = 'a:2:{i:0;a:4:{s:11:"mt_template";s:7:"fe_page";s:9:"mt_search";s:9:"id="main"";s:10:"mt_replace";s:22:"id="main" class="main"";s:11:"mt_inactive";s:0:"";}i:1;a:4:{s:11:"mt_template";s:7:"fe_page";s:9:"mt_search";s:14:"class="inside"";s:10:"mt_replace";s:23:"class="inside clearfix"";s:11:"mt_inactive";s:0:"";}}';
