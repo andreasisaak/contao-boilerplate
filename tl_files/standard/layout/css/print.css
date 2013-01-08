@@ -4,6 +4,10 @@
     margin:0;
     padding:0;
     border:0;
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
   
   html, body, div, span, applet, object, iframe,
@@ -63,32 +67,28 @@
     margin:0.5em;
     font-stretch:expanded;
   }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
   
-  a, a:visited, a:hover, a:visited:hover {
-    color:#000;
-    text-decoration:none;
-    background-color:transparent;
+  a,
+  a:visited {
+    text-decoration: underline;
   }
 
   a[href]:after {
-    content:" <"attr(href)"> ";
-    background-color:inherit;
-    font-style:italic;
-    font-size:9pt;
-  } 
+    content: " (" attr(href) ")";
+  }
 
-  *[name]:after {
-    content:" [#"attr(name)"]";
-    background-color:inherit;
-    font-style:italic;
-    font-size:0.7em;
-  } 
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-  *[title]:after {
-    content:" ("attr(title)") ";
-    background-color:inherit;
-    font-style:italic;
-    font-size:0.7em;
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
   }
   
   img {
@@ -104,11 +104,7 @@
   
   footer, 
   aside,
-  .mod_backboneit_navigation_menu,
-  .mod_changelanguage,
-  .mod_navigation,
-  .mod_customnav,
-  .mod_sitemap,
+  nav,
   .pagination {
     display:none;
   }

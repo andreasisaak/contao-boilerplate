@@ -39,10 +39,6 @@
     outline:0 none;
     border:1px solid #999;
   }
-
-  .nobr { 
-    white-space:nowrap;
-  }
   
  /*------------------------------------------------------------------------*/
 
@@ -70,10 +66,7 @@
   * Navigation elements
   */
   
-  .mod_backboneit_navigation_menu ul,
-  .mod_changelanguage ul,
-  .mod_navigation ul,
-  .mod_customnav ul,
+  nav ul,
   .mod_sitemap ul,
   .pagination ul {
     margin:0;
@@ -131,7 +124,7 @@
  
   footer {
 
-  }   
+  }
 
   footer .inside {
 
@@ -139,20 +132,19 @@
  
  /*------------------------------------------------------------------------*/
   
- /**
-  * Clearfix
-  */
-
+  .clearfix:before,
   .clearfix:after {
-    content: ".";
-    display: block;
-    font-size:0;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+    content:" ";
+    display:table;
   }
 
-  .clearfix { display: block; }
+  .clearfix:after {
+    clear:both;
+  }
+
+  .clearfix {
+    *zoom:1;
+  }
   
 }
 
