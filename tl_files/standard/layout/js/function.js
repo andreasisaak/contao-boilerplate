@@ -1,0 +1,23 @@
+document.documentElement.className += " js";
+
+window.addEvent('domready', function() {
+
+    // track retina devices
+    if (window.devicePixelRatio >= 2){  
+        var cookieValues = {
+            hasRetina: true
+        };
+        Cookie.write('retina', JSON.encode(cookieValues),{duration: 1000});
+    }
+
+    // center pagination
+    if ($('pagination'))  {
+        var paginationWidth = $('pagination').getStyle('width').toInt();
+        var liWidth = 0;
+        $each($$('#pagination li'), function(item){
+            liWidth += item.getStyle('width').toInt() + 10;
+        });
+        $('pagination').setStyle('padding-left', (paginationWidth - 10 - liWidth)/2);
+    }
+
+});

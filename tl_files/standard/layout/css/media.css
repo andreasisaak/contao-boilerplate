@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1280px) { }
+
+@media only screen and (max-width: 768px) { }
+
+@media only screen and (max-width: 768px) and (orientation:portrait) and (min-width: 768px) and (orientation:portrait) { }
+
+@media only screen and (max-width: 720px) { 
+
+  .subcolumns .first, 
+  .subcolumns .mod_colsetPart, 
+  .subcolumns .sc_second {
+    float:none;
+    width:100%;
+    margin:0 !important;
+  }
+  
+  .subcolumns .mod_colsetPart, 
+  .subcolumns .sc_second {
+    margin-top:20px !important;
+  }
+  
+  .subcolumns .subcl,
+  .subcolumns .subcr,
+  .subcolumns .subc {
+    padding:0 !important;
+  }
+
+}
+
+@media only screen and (max-width: 480px) { }

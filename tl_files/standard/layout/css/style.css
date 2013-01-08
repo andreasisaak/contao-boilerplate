@@ -1,0 +1,163 @@
+@media screen, projection {
+  
+  body {
+	font:normal 12px/1.5em Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+  }
+  
+ /*------------------------------------------------------------------------*/
+  
+ /**
+  * Normalize content elements
+  */
+
+  a {
+	color:#000;
+	text-decoration:underline;
+  }
+
+  a:hover { 
+	text-decoration:none; 
+  }
+  
+  input, textarea, select {
+	font:normal 12px/1.5em Arial, Helvetica, sans-serif;
+  }
+
+  input[type="text"]:focus, 
+  input[type="password"]:focus, 
+  input[type="date"]:focus, 
+  input[type="datetime"]:focus, 
+  input[type="email"]:focus, 
+  input[type="number"]:focus, 
+  input[type="search"]:focus, 
+  input[type="tel"]:focus, 
+  input[type="time"]:focus, 
+  input[type="url"]:focus, 
+  textarea:focus {
+    background:none repeat scroll 0 0 #FCFCFC;
+    outline:0 none;
+    border:1px solid #999;
+  }
+
+  .nobr { 
+    white-space:nowrap;
+  }
+  
+ /*------------------------------------------------------------------------*/
+
+  #wrapper {
+
+  }
+  
+ /*------------------------------------------------------------------------*/
+
+  header  {
+
+  }
+
+  h1 {
+
+  }
+
+  h1 a {
+
+  }
+  
+ /*------------------------------------------------------------------------*/
+  
+ /**
+  * Navigation elements
+  */
+  
+  .mod_backboneit_navigation_menu ul,
+  .mod_changelanguage ul,
+  .mod_navigation ul,
+  .mod_customnav ul,
+  .mod_sitemap ul,
+  .pagination ul {
+    margin:0;
+    padding:0;
+  }
+  
+  nav {
+
+  }    
+  
+  nav ul {
+
+  }  
+  
+  nav li {
+  
+  }
+  
+  nav li.last {
+
+  }
+  
+  nav li a,
+  nav li span {
+
+  }
+ 
+  nav li .active {
+
+  } 
+  
+ /*------------------------------------------------------------------------*/
+ 
+  #container {
+
+  }
+  
+  #main {
+  
+  }
+
+  aside {
+
+  }
+  
+  #right {
+  
+  }
+  
+  #left {
+  
+  }
+  
+ /*------------------------------------------------------------------------*/
+ 
+  footer {
+
+  }   
+
+  footer .inside {
+
+  }
+ 
+ /*------------------------------------------------------------------------*/
+  
+ /**
+  * Clearfix
+  */
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    font-size:0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .clearfix { display: block; }
+  
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { 
+  
+
+
+}
