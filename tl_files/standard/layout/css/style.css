@@ -81,13 +81,13 @@
     width:0px;
     height:0px; 
     */
-    text-indent:-99999px;
   }
 
   h1 a {
     display:block;
     width:inherit;
     height:inherit;
+    text-indent:-99999px;
     background:#fff url(../images/logo.jpg) no-repeat center center;
   }
   
