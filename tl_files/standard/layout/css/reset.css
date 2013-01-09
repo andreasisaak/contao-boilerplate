@@ -69,6 +69,10 @@
     vertical-align:middle;
   }
 
+  object {
+    display:block;
+  }
+
   textarea {
     resize:vertical;
   }
