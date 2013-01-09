@@ -20,4 +20,16 @@ window.addEvent('domready', function() {
         $('pagination').setStyle('padding-left', (paginationWidth - 10 - liWidth)/2);
     }
 
+    // dropdown for ie6
+    if ($('nav')) {
+        $$('#nav li').addEvents({
+            mouseenter: function() {
+                $(this).getChildren('ul').addClass('hover');
+            },
+            mouseleave: function() {
+                $(this).getChildren('ul').removeClass('hover');
+            }
+        });
+    }
+
 });

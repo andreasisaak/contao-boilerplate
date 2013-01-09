@@ -120,6 +120,23 @@
 
   }
   
+  nav li.submenu ul {
+    background-color:#fff;
+    display:none;
+    position:absolute;
+    z-index:100;
+  }
+
+  nav li:hover ul, 
+  nav li:hover li, 
+  nav li.submenu ul.hover {
+    display:block;
+  }
+  
+  nav li.submenu li {
+    float:none;
+  }
+
   nav li a,
   nav li span {
 
