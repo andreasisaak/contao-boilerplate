@@ -77,11 +77,18 @@
   }
 
   h1 {
-
+    /* 
+    width:0px;
+    height:0px; 
+    */
+    text-indent:-99999px;
   }
 
   h1 a {
-
+    display:block;
+    width:inherit;
+    height:inherit;
+    background:#fff url(../images/logo.jpg) no-repeat center center;
   }
   
  /*------------------------------------------------------------------------*/
@@ -174,6 +181,11 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { 
   
-
+  h1 a {
+    /* 
+    background-size:0px 0px; 
+    */
+    background-image:url(../images/logo@2x.jpg);
+  }
 
 }
