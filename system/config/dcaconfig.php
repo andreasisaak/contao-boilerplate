@@ -36,9 +36,9 @@ $GLOBALS['TL_DCA']['tl_page']['list']['label']['format'] = '%s <span style="colo
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['fields'][] = 'id'; 
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['format'] = '%s <span style="color: #aaaaaa; padding-left: 3px;">(%s, ID: %s)</span>';
 
-// Überschriften eingrenzen
-//$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2','h3','h4','h5','h6');
-//$GLOBALS['TL_DCA']['tl_news']['fields']['caption']['eval']['allowHtml'] = true;
+// Ueberschriften eingrenzen
+$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2','h3','h4','h5','h6');
+// $GLOBALS['TL_DCA']['tl_news']['fields']['caption']['eval']['allowHtml'] = true;
 
 // Importiere Backend-User
 $this->import('BackendUser', 'User');
