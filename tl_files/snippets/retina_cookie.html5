@@ -1,0 +1,2 @@
+<?php $objCookie = json_decode($this->Input->cookie("retina")); ?>
+<?php echo ($objCookie->hasRetina) ? $this->getImage('src', 'retina_width', 'retina_height') : $this->getImage('src', 'width', 'height'); ?>
