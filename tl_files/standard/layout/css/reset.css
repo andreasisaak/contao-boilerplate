@@ -65,6 +65,11 @@
     cursor:pointer;
   }
 
+  button::-moz-focus-inner {
+    border:0;
+    padding:0;
+  }
+
   img {
     vertical-align:middle;
   }
