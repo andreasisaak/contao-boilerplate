@@ -19,4 +19,6 @@ _gaq.push(['_trackPageview']);
 </script>
 <?php else: ?>
 <!-- Google Analytics: Tracking for page {{env::host}} disabled -->
-<?php endif; endif; ?>
+<?php endif; else: ?>
+<!-- Google Analytics: Tracking for page {{env::host}} disabled -->
+<?php endif; ?>
