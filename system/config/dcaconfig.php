@@ -46,13 +46,13 @@ $this->import('BackendUser', 'User');
 if (!$this->User->isAdmin)
 {
   // Inhaltselemente
-  $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_ck2012';
+  $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
   
   // Events
-  $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['details']['eval']['rte'] = 'tinyMCE_ck2012';
+  $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['details']['eval']['rte'] = 'tinyMCE_boilerplate';
   
   // Nachrichten
-  $GLOBALS['TL_DCA']['tl_news']['fields']['text']['eval']['rte'] = 'tinyMCE_ck2012';
+  $GLOBALS['TL_DCA']['tl_news']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
 }
 
 ?>
