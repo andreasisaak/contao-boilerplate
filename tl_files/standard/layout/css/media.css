@@ -8,7 +8,8 @@
 
   .subcolumns .first, 
   .subcolumns .mod_colsetPart, 
-  .subcolumns .sc_second {
+  .subcolumns .sc_second, 
+  .subcolumns > div {
     float:none;
     width:100%;
     margin:0 !important;
