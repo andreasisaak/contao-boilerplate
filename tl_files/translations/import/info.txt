@@ -1,1 +1,0 @@
-Import translations from language2file

@@ -1,1 +1,0 @@
-Export translations from language2file
