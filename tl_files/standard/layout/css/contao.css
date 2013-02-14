@@ -4,8 +4,8 @@
   * Normalize contao styles
   */
 
-  .block ul, 
-  .block ol { 
+  .mod_article ul, 
+  .mod_article ol { 
     list-style:disc; 
     padding:0 0 0 20px; 
     margin:5px 10px 5px;
@@ -15,11 +15,11 @@
     margin:5px 0; 
   }
 
-  .block ol { 
+  .mod_article ol { 
     list-style:decimal;
   }
 
-  .block li { 
+  .mod_article li { 
     padding:1px 0; 
   }
 
