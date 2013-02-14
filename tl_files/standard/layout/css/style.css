@@ -39,30 +39,6 @@
     outline:0 none;
     border:1px solid #999;
   }
-
-  .data ul { 
-    margin:5px 0; 
-  }
-
-  .ce_list ul { 
-    list-style:disc; 
-    padding:0 0 0 20px; 
-    margin:5px 10px 5px;
-  }
-
-  .ce_list li, 
-  .data li { 
-    padding:1px 0; 
-  }
-
-  .data span { 
-    float:left;
-    width:55px;
-  }
-
-  .main p {
-    padding:8px 0;
-  }
   
  /*------------------------------------------------------------------------*/
 
@@ -96,13 +72,6 @@
  /**
   * Navigation elements
   */
-  
-  nav ul,
-  .mod_sitemap ul,
-  .pagination ul {
-    margin:0;
-    padding:0;
-  }
   
   nav {
 
@@ -171,10 +140,6 @@
  /*------------------------------------------------------------------------*/
  
   footer {
-
-  }
-
-  footer .inside {
 
   }
  
