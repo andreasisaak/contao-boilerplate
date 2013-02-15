@@ -24,6 +24,14 @@
     font:normal 12px/1.5em Arial, Helvetica, sans-serif;
   }
 
+  em, i {
+    font-style:italic;
+  }
+
+  strong, b {
+    font-weight:700;
+  }
+
   input[type="text"]:focus, 
   input[type="password"]:focus, 
   input[type="date"]:focus, 
