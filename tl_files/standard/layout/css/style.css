@@ -19,10 +19,6 @@
   a:hover { 
     text-decoration:none; 
   }
-  
-  input, textarea, select {
-    font:normal 12px/1.5em Arial, Helvetica, sans-serif;
-  }
 
   em, i {
     font-style:italic;
