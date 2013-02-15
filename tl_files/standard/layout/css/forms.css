@@ -16,6 +16,12 @@
     margin-bottom:10px;
   }
 
+  .entry label {
+    width:100px;
+    display:block;
+    float:left;
+  }
+
   .checkbox_container { 
     margin-top:10px; 
   }
@@ -35,8 +41,14 @@
     vertical-align:middle; 
   }
 
-  input[type="checkbox"], 
-  input[type="radio"], 
+  .checkbox_container label, 
+  .radio_container label { 
+    float:none;
+    display:inline;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"],
   x:-moz-any-link {
     position:relative;
   }
