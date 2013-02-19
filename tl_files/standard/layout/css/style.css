@@ -1,5 +1,9 @@
 @media screen, projection {
   
+  html {
+    overflow-y:scroll;
+  }
+  
   body {
     font:normal 12px/1.5em Arial, Helvetica, sans-serif;
     -webkit-text-size-adjust: none;
