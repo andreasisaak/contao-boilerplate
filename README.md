@@ -1,5 +1,5 @@
-Contao Boilerplate
-==================
+Contao Boilerplate für Contao 3.x
+=================================
 
 Die Contao Boilerplate ermöglicht es innerhalb von 5 Minuten jede Installation auf einen gemeinsamen Stand zu bringen. Enthalten sind Grundkonfigurationen, Ordnerstrukturen und CSS-/JS-Dateien.
 

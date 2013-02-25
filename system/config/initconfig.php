@@ -1,4 +1,7 @@
 <?php
-require_once(TL_ROOT.'/plugins/FirePHPCore/FirePHP.class.php');
-require_once(TL_ROOT.'/plugins/FirePHPCore/fb.php');
-?>
+
+// Put your custom configuration here
+if(file_exists(TL_ROOT.'/assets/FirePHPCore/fb.php'))
+{
+    require_once(TL_ROOT.'/assets/FirePHPCore/fb.php');
+}
