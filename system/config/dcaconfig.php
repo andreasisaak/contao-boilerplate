@@ -28,31 +28,34 @@
  * @filesource
  */
 
-// Seiten-ID anzeigen
+// Display page ID
 $GLOBALS['TL_DCA']['tl_page']['list']['label']['fields'][] = 'id';
 $GLOBALS['TL_DCA']['tl_page']['list']['label']['format'] = '%s <span style="color: #aaaaaa; padding-left: 3px;">(ID: %s)</span>';
  
-// Artikel-ID anzeigen
+// Display article ID
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['fields'][] = 'id'; 
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['format'] = '%s <span style="color: #aaaaaa; padding-left: 3px;">(%s, ID: %s)</span>';
 
-// Ueberschriften eingrenzen
+// Narrow headlines
 $GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2','h3','h4','h5','h6');
 // $GLOBALS['TL_DCA']['tl_news']['fields']['caption']['eval']['allowHtml'] = true;
 
-// Importiere Backend-User
+// Import Backend-User
 $this->import('BackendUser', 'User');
-// Nur wenn es sich NICHT um einen Admin handelt
+
 if (!$this->User->isAdmin)
 {
-  // Inhaltselemente
-  $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
-  
-  // Events
-  $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['details']['eval']['rte'] = 'tinyMCE_boilerplate';
-  
-  // Nachrichten
-  $GLOBALS['TL_DCA']['tl_news']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_news']['fields']['teaser']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_news']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['teaser']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['details']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_newsletter']['fields']['teaser']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_newsletter']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_faq']['fields']['answer']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_form_field']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_comments']['fields']['comment']['eval']['rte'] = 'tinyMCE_boilerplate';
+    $GLOBALS['TL_DCA']['tl_article']['fields']['teaser']['eval']['rte'] = 'tinyMCE_boilerplate';
 }
 
 ?>
