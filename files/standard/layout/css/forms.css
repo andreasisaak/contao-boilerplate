@@ -20,8 +20,7 @@
 
   .entry label {
     width:100px;
-    display:block;
-    float:left;
+    display:inline-block;
   }
 
   .checkbox_container { 
