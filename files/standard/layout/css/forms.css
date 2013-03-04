@@ -42,10 +42,20 @@
     vertical-align:middle; 
   }
 
+  input.checkbox, 
+  input.radio { 
+    margin-right:3px;
+  }
+
   .checkbox_container label, 
   .radio_container label { 
     float:none;
     display:inline;
+  }
+
+  .captcha_text {
+    display:block;
+    float:none;
   }
 
   input[type="checkbox"],
