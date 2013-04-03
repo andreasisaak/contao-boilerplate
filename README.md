@@ -23,6 +23,8 @@ Snippets
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="msapplication-TileImage" content="tl_files/standard/win-8.png" />
+<meta name="msapplication-TileColor" content="#fff" />
 <link rel="apple-touch-icon-precomposed" href="tl_files/standard/apple-touch-icon-precomposed.png" />
 <link rel="icon" type="image/vnd.microsoft.icon" href="tl_files/standard/favicon.ico" />
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="tl_files/standard/favicon.ico" />
@@ -54,6 +56,8 @@ Snippets
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="msapplication-TileImage" content="tl_files/standard/win-8.png" />
+<meta name="msapplication-TileColor" content="#fff" />
 <link rel="apple-touch-icon-precomposed" href="tl_files/standard/apple-touch-icon-precomposed.png" />
 <link rel="icon" type="image/vnd.microsoft.icon" href="tl_files/standard/favicon.ico" />
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="tl_files/standard/favicon.ico" />
