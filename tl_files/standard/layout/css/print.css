@@ -79,7 +79,7 @@
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content:" (" attr(href) ")";
   }
 
   abbr[title]:after {
@@ -125,7 +125,7 @@
   
   .subcolumns .mod_colsetPart, 
   .subcolumns .sc_second {
-    margin-top:20px !important;
+    margin-top:0 !important;
   }
   
   .subcolumns .subcl,
