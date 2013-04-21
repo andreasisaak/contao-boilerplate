@@ -5,7 +5,7 @@
   }
   
   body {
-    font:normal 12px/1.5em Arial, Helvetica, sans-serif;
+    font:normal 14px/1.5em Arial, Helvetica, sans-serif;
     -webkit-text-size-adjust: none;
   }
   
@@ -20,8 +20,22 @@
     text-decoration:underline;
   }
 
+  a:visited { 
+    color:#000;
+  }
+
   a:hover { 
-    text-decoration:none; 
+    color:#000;
+    text-decoration:none;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; 
+  }
+
+  a:focus {
+    outline:thin dotted; 
   }
 
   em, i {
@@ -44,10 +58,9 @@
   input[type="url"]:focus, 
   textarea:focus {
     background:none repeat scroll 0 0 #FCFCFC;
-    outline:0 none;
     border:1px solid #999;
   }
-  
+
  /*------------------------------------------------------------------------*/
 
   #wrapper {
@@ -80,19 +93,19 @@
  /**
   * Navigation elements
   */
-  
+
   nav {
 
-  }    
-  
+  }
+
   nav ul {
 
-  }  
-  
-  nav li {
-  
   }
-  
+
+  nav li {
+
+  }
+
   nav li.last {
 
   }
@@ -109,7 +122,7 @@
   nav li.submenu ul.hover {
     display:block;
   }
-  
+
   nav li.submenu li {
     float:none;
   }
@@ -118,41 +131,41 @@
   nav li span {
 
   }
- 
+
   nav li .active {
 
-  } 
-  
+  }
+
  /*------------------------------------------------------------------------*/
- 
+
   #container {
 
   }
-  
+
   #main {
-  
+
   }
 
   aside {
 
   }
-  
+
   #right {
-  
+
   }
-  
+
   #left {
-  
+
   }
-  
+
  /*------------------------------------------------------------------------*/
- 
+
   footer {
 
   }
- 
+
  /*------------------------------------------------------------------------*/
-  
+
   .clearfix:before,
   .clearfix:after {
     content:" ";
@@ -166,16 +179,16 @@
   .clearfix {
     *zoom:1;
   }
-  
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { 
-  
+
   h1 a {
     /* 
-    background-size:0px 0px; 
-    */
+    background-size:0px 0px;
     background-image:url(../images/logo@2x.jpg);
+    */
   }
 
 }
