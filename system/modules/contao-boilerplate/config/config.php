@@ -23,7 +23,9 @@ $GLOBALS['TL_CONFIG']['timeZone']                   = 'Europe/Berlin';
 
 // URL settings
 $GLOBALS['TL_CONFIG']['rewriteURL']                 = true;
+$GLOBALS['TL_CONFIG']['urlSuffix']                  = '';
 $GLOBALS['TL_CONFIG']['folderAlias']                = true;
+$GLOBALS['TL_CONFIG']['folderUrl']                  = true;
 $GLOBALS['TL_CONFIG']['languageAlias']              = 'none';
 $GLOBALS['TL_CONFIG']['templateFiles']              = 'tpl,html5,xhtml,mobile';
 
@@ -36,6 +38,12 @@ $GLOBALS['TL_CONFIG']['imageHeight']                = 3000;
 $GLOBALS['TL_CONFIG']['gdMaxImgWidth']              = PHP_INT_MAX;
 $GLOBALS['TL_CONFIG']['gdMaxImgHeight']             = PHP_INT_MAX;
 $GLOBALS['TL_CONFIG']['jpgQuality']                 = 90;
+
+$GLOBALS['TL_CONFIG']['repository_unsafe_catalog']  = true;
+$GLOBALS['TL_CONFIG']['minifyMarkup']               = true;
+$GLOBALS['TL_CONFIG']['gzipScripts']                = true;
+$GLOBALS['TL_CONFIG']['bypassCache']                = true;
+$GLOBALS['TL_CONFIG']['doNotCollapse']              = true;
 
 // Theme+ settings
 $GLOBALS['TL_CONFIG']['default_compression']        = 'gzip';
