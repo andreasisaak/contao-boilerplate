@@ -8,7 +8,7 @@
  * @license    GNU/LGPL 
  * @filesource
  *
- * @thanks     Tristan Lins <tristan.lins@infinitysoft.de>
+ * @thanks     Tristan Lins <tristan.lins@bit3.de>
  *
  */
 
