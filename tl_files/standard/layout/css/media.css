@@ -12,18 +12,33 @@
   .subcolumns > div {
     float:none;
     width:100%;
-    margin:0 !important;
+    margin:0;
   }
   
   .subcolumns .mod_colsetPart, 
   .subcolumns .sc_second {
-    margin-top:0 !important;
+    margin-top:0;
   }
   
   .subcolumns .subcl,
   .subcolumns .subcr,
   .subcolumns .subc {
-    padding:0 !important;
+    padding:0;
+  }
+
+  .ym-grid .first,
+  .ym-grid .ce_colsetStart,
+  .ym-grid .ce_colsetPart,
+  .ym-grid > div {
+    float:none;
+    width:100%;
+    margin:0;
+  }
+    
+  .ym-grid .ym-gbox-left,
+  .ym-grid .ym-gbox,
+  .ym-grid .ym-gbox-right {
+    padding:0;
   }
 
 }
