@@ -1,14 +1,10 @@
 @media screen, projection {
 
-  .nobr { 
+  .nobr {
     white-space:nowrap;
   }
 
  /*------------------------------------------------------------------------*/
-  
- /**
-  * Mobile helper class
-  */
 
   .hide-mobile {
     display:none;

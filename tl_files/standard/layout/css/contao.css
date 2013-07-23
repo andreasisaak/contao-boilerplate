@@ -1,9 +1,5 @@
 @media screen, projection {
 
- /**
-  * Normalize contao styles
-  */
-
   .mod_article ul, 
   .mod_article ol { 
     list-style:disc; 
