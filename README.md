@@ -5,6 +5,19 @@ The Contao boilerplate helps you to set up a standardized configuration of your 
 
 [The Contao boilerplate for Contao 3.x](https://github.com/andreasisaak/contao-boilerplate/tree/3.x)
 
+Recommended order of CSS files
+------------------------------
+
+* reset.css OR normalize.css
+* contao.css
+* forms.css
+* ! Any webfonts
+* style.css
+* ! Custom css files
+* print.css
+* media.css
+
+
 Recommended extensions
 ----------------------
 
@@ -37,6 +50,19 @@ Contao Boilerplate - Deutsch
 Die Contao Boilerplate ermöglicht es innerhalb von 5 Minuten eine Contao-Installation mit einer standardisierten Konfiguration einzurichten. Enthalten sind Grundkonfigurationen, Ordnerstrukturen, Entwicklertools und CSS-/JS-Dateien.
 
 [Die Contao Boilerplate für Contao 3.x](https://github.com/andreasisaak/contao-boilerplate/tree/3.x)
+
+Empfohlene Reihenfolge der CSS-Dateien
+--------------------------------------
+
+* reset.css OR normalize.css
+* contao.css
+* forms.css
+* ! Webfonts
+* style.css
+* ! Eigene CSS-Dateien
+* print.css
+* media.css
+
 
 Empfohlene Extensions
 ---------------------
