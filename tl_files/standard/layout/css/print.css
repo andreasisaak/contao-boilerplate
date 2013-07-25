@@ -42,7 +42,8 @@
     padding:0;
     font:12pt Garamond, Palatino, "Times New Roman", Times, serif;
     color:#000;
-    background:#fff url(none);
+    background-color:#fff;
+    background-image:none;
   }
   
  /*------------------------------------------------------------------------*/
