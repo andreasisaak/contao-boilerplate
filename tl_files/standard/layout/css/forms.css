@@ -41,6 +41,11 @@
     margin-top:10px; 
   }
 
+  .checkbox_container input, 
+  .radio_container input {
+    width:auto;
+  }
+
   .checkbox_container span, 
   .radio_container span { 
     display:block; 
@@ -64,6 +69,11 @@
   .checkbox_container label, 
   .radio_container label { 
     float:none;
+    display:inline;
+  }
+
+  span > input, 
+  input + label {
     display:inline;
   }
 
