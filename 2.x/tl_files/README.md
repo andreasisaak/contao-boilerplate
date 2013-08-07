@@ -1,0 +1,1 @@
+! Copy the standard folder from the root in this directory !
