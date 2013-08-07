@@ -21,7 +21,6 @@ Recommended extensions
 
 * [theme_plus](https://contao.org/de/extension-list/view/theme_plus.html)
 * [header_code](https://contao.org/de/extension-list/view/header_code.html)
-* [realurl](https://contao.org/de/extension-list/view/realurl.html)
 * [template_override](https://contao.org/en/extension-list/view/template_override.html)
 * [improvements](https://contao.org/de/extension-list/view/improvements.html)
 * [manipulateTemplates](https://contao.org/de/extension-list/view/manipulateTemplates.html)
@@ -65,7 +64,6 @@ Empfohlene Extensions
 
 * [theme_plus](https://contao.org/de/extension-list/view/theme_plus.html)
 * [header_code](https://contao.org/de/extension-list/view/header_code.html)
-* [realurl](https://contao.org/de/extension-list/view/realurl.html)
 * [template_override](https://contao.org/en/extension-list/view/template_override.html)
 * [improvements](https://contao.org/de/extension-list/view/improvements.html)
 * [manipulateTemplates](https://contao.org/de/extension-list/view/manipulateTemplates.html)
