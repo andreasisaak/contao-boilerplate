@@ -32,4 +32,15 @@ window.addEvent('domready', function() {
         });
     }
 
+    // alternative mobile navigation
+    if ($('nav-mobile')) {
+        $('nav-mobile').addEvent('click', function (e) {
+            if ($('nav').hasClass('active')) {
+                $('nav').removeClass('active');
+            } else {
+                $('nav').addClass('active');
+            }
+        });
+    }
+
 });
