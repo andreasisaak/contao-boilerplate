@@ -1,0 +1,5 @@
+<?php 
+
+echo '<p class="teaser">' . String::getInstance()->substr($this->text, 80) . '</p>';
+
+?>
