@@ -1,1 +1,1 @@
-! Copy the standard folder from the root in this directory !
+! Copy the standard & snippets folder from the root in this directory !
