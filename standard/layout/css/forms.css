@@ -1,5 +1,9 @@
 @media screen, projection {
 
+  form br { 
+    display:none; 
+  }
+
   input, textarea, select {
     font:normal 14px/1.5em Arial, Helvetica, sans-serif;
     -webkit-border-radius:2px;
@@ -59,11 +63,6 @@
   .checkbox_container legend > span:before, 
   .radio_container legend > span:before {
     content:" ";
-  }
-
-  .checkbox_container + br, 
-  .radio_container + br { 
-    display:none; 
   }
 
   .checkbox_container label, 
