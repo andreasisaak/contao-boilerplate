@@ -25,7 +25,19 @@
   * you can use the generic selector below, but it's slower:
   * [class*="icon-"]
   */
-  .icon-mail, .icon-search, .icon-user, .icon-grid, .icon-arrow-up-right, .icon-arrow-right, .icon-arrow-down-right, .icon-arrow-down, .icon-arrow-left, .icon-plus, .icon-minus, .icon-x, .icon-checkmark {
+  .icon-mail:before, 
+  .icon-search:before, 
+  .icon-user:before, 
+  .icon-grid:before, 
+  .icon-arrow-up-right:before, 
+  .icon-arrow-right:before, 
+  .icon-arrow-down-right:before, 
+  .icon-arrow-down:before, 
+  .icon-arrow-left:before, 
+  .icon-plus:before, 
+  .icon-minus:before, 
+  .icon-x:before, 
+  .icon-checkmark:before {
     font-family: 'contao-boilerplate';
     speak: none;
     font-style: normal;
