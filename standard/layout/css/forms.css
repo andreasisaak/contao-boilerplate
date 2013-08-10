@@ -51,6 +51,16 @@
     display:block; 
   }
 
+  .checkbox_container legend > span, 
+  .radio_container legend > span {
+    display:inline;
+  }
+
+  .checkbox_container legend > span:before, 
+  .radio_container legend > span:before {
+    content:" ";
+  }
+
   .checkbox_container + br, 
   .radio_container + br { 
     display:none; 
