@@ -1,12 +1,12 @@
   @font-face {
-    font-family:'contao-boilerplate';
+    font-family: 'contao-boilerplate';
     src:url('contao-boilerplate.eot');
     src:url('contao-boilerplate.eot?#iefix') format('embedded-opentype'),
         url('contao-boilerplate.woff') format('woff'),
         url('contao-boilerplate.ttf') format('truetype'),
         url('contao-boilerplate.svg#contao-boilerplate') format('svg');
-    font-weight:normal;
-    font-style:normal;
+    font-weight: normal;
+    font-style: normal;
   }
 
   [data-icon]:before {
@@ -20,17 +20,12 @@
     -webkit-font-smoothing: antialiased;
   }
 
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-  .icon-close, 
-  .icon-mail, 
-  .icon-search, 
-  .icon-user, 
-  .icon-grid, 
-  .icon-checkmark {
+ /**
+  * Instead of a list of all class selectors
+  * you can use the generic selector below, but it's slower:
+  * [class*="icon-"]
+  */
+  .icon-mail, .icon-search, .icon-user, .icon-grid, .icon-arrow-up-right, .icon-arrow-right, .icon-arrow-down-right, .icon-arrow-down, .icon-arrow-left, .icon-plus, .icon-minus, .icon-x, .icon-checkmark {
     font-family: 'contao-boilerplate';
     speak: none;
     font-style: normal;
@@ -41,26 +36,54 @@ you can use the generic selector below, but it's slower:
     -webkit-font-smoothing: antialiased;
   }
 
-  .icon-close:before {
+  .icon-mail:before {
     content: "\31";
   }
 
-  .icon-mail:before {
-    content: "\34";
-  }
-
   .icon-search:before {
-    content: "\33";
-  }
-
-  .icon-user:before {
-    content: "\35";
-  }
-
-  .icon-grid:before {
     content: "\32";
   }
 
+  .icon-user:before {
+    content: "\33";
+  }
+
+  .icon-grid:before {
+    content: "\25a6";
+  }
+
+  .icon-arrow-up-right:before {
+    content: "\2197";
+  }
+
+  .icon-arrow-right:before {
+    content: "\2192";
+  }
+
+  .icon-arrow-down-right:before {
+    content: "\2198";
+  }
+
+  .icon-arrow-down:before {
+    content: "\2193";
+  }
+
+  .icon-arrow-left:before {
+    content: "\2190";
+  }
+
+  .icon-plus:before {
+    content: "\2b";
+  }
+
+  .icon-minus:before {
+    content: "\2d";
+  }
+
+  .icon-x:before {
+    content: "\78";
+  }
+
   .icon-checkmark:before {
-    content: "\36";
+    content: "\34";
   }
