@@ -4,7 +4,7 @@
     <td class="col_1 col_last"><?php echo $this->generateWithError(); ?></td>
   </tr>
 <?php else: ?>
-  <div class="entry <?php echo $this->class; ?>">   
+  <div class="entry <?php echo $this->class; ?> <?php echo $this->name; ?>">
   <?php if ($this->label): ?>
         <label for="ctrl_<?php echo $this->id; ?>">
         <?php echo $this->label; ?>
