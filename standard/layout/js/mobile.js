@@ -1,6 +1,7 @@
 /*!
  *
  *  Copyright (c) David Bushell | http://dbushell.com/
+ *  Copyright (c) Andreas Isaak | http://www.andreas-isaak.de
  *
  *  http://coding.smashingmagazine.com/2013/01/15/off-canvas-navigation-for-responsive-website/
  *
@@ -83,6 +84,10 @@
             }
             _init = true;
 
+            var nav = document.getElementById('nav');
+            var header = document.getElementById('header');
+            var container = document.getElementById('container');
+
             var closeNavEnd = function(e)
             {
                 if (e && e.target === inner) {
@@ -102,6 +107,7 @@
                     }
                 }
                 removeClass(doc, nav_class);
+                container.removeAttribute('style');
             };
 
             app.openNav = function()
@@ -110,6 +116,10 @@
                     return;
                 }
                 addClass(doc, nav_class);
+                if (nav.scrollHeight > (container.offsetHeight + header.offsetHeight))
+                {
+                    container.setAttribute('style', 'height:' + (nav.scrollHeight - header.offsetHeight ) + 'px;');
+                }
                 nav_open = true;
             };
 
