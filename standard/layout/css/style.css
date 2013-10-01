@@ -25,6 +25,9 @@
     box-sizing:border-box;
   }
 
+  *[style~="font-size"] { }
+  *[style~="margin"] { }
+
   a {
     color:#000;
     text-decoration:underline;
