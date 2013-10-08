@@ -40,7 +40,7 @@
     text-align:left;
     margin:0;
     padding:0;
-    font:12pt Garamond, Palatino, "Times New Roman", Times, serif;
+    font:11pt Arial, Helvetica, sans-serif;
     color:#000;
     background-color:#fff;
     background-image:none;
@@ -65,7 +65,7 @@
   }
 
   p {
-    margin:0.5em;
+    margin:0.5em 0;
     font-stretch:expanded;
   }
 
@@ -93,7 +93,7 @@
   }
   
   img {
-    padding:0.5em;
+    padding:0.5em 0;
   }
   
  /*------------------------------------------------------------------------*/
@@ -134,5 +134,11 @@
   .subcolumns .subc {
     padding:0 !important;
   }
-  
+
+ /*------------------------------------------------------------------------*/
+
+  table {
+    width:100%;
+  }
+
 }
