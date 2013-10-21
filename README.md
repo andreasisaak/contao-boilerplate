@@ -1,5 +1,5 @@
-Contao Boilerplate
-==================
+Contao Boilerplate 1.0
+======================
 
 General files for every contao version you find in the (tl_)files folder
 
