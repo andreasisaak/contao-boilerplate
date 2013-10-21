@@ -1,31 +1,13 @@
-<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2011 Leo Feyer
  *
- * Formerly known as TYPOlight Open Source CMS.
- *
- * This program is free software: you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation, either
- * version 3 of the License, or (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * Lesser General Public License for more details.
- * 
- * You should have received a copy of the GNU Lesser General Public
- * License along with this program. If not, please visit the Free
- * Software Foundation website at <http://www.gnu.org/licenses/>.
- *
- * PHP version 5
- * @copyright  Leo Feyer 2005-2011
- * @author     Leo Feyer <http://www.contao.org>
- * @package    Config
- * @license    LGPL
+ * @copyright  Andreas Isaak 2013 
+ * @package    contao-boilerplate
+ * @license    GNU/LGPL 
  * @filesource
+ *
  */
 
 // Display page ID
@@ -37,12 +19,10 @@ $GLOBALS['TL_DCA']['tl_article']['list']['label']['fields'][] = 'id';
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['format'] = '%s <span style="color: #aaaaaa; padding-left: 3px;">(%s, ID: %s)</span>';
 
 // Narrow headlines
-$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2','h3','h4','h5','h6');
-// $GLOBALS['TL_DCA']['tl_news']['fields']['caption']['eval']['allowHtml'] = true;
+$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2', 'h3', 'h4', 'h5', 'h6', 'h1');
 
 // Import Backend-User
 $this->import('BackendUser', 'User');
-
 if (!$this->User->isAdmin)
 {
     $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
@@ -58,4 +38,20 @@ if (!$this->User->isAdmin)
     $GLOBALS['TL_DCA']['tl_article']['fields']['teaser']['eval']['rte'] = 'tinyMCE_boilerplate';
 }
 
-?>
+// Remove the space fields
+// unset($GLOBALS['TL_DCA']['tl_article']['fields']['space']);
+// unset($GLOBALS['TL_DCA']['tl_content']['fields']['space']);
+// unset($GLOBALS['TL_DCA']['tl_module'] ['fields']['space']);
+
+// Remove the image margin fields
+// unset($GLOBALS['TL_DCA']['tl_article']['fields']['imagemargin']);
+// unset($GLOBALS['TL_DCA']['tl_content']['fields']['imagemargin']);
+// unset($GLOBALS['TL_DCA']['tl_module']['fields']['imagemargin']);
+// unset($GLOBALS['TL_DCA']['tl_news']['fields']['imagemargin']);
+// unset($GLOBALS['TL_DCA']['tl_calendar_events']['fields']['imagemargin']);
+
+// Sets the default content element
+// $GLOBALS['TL_DCA']['tl_content']['fields']['type']['default'] = 'headline';
+
+// Sets the default form field
+// $GLOBALS['TL_DCA']['tl_form_field']['fields']['type']['default'] = 'hidden';
