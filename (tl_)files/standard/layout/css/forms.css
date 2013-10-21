@@ -5,11 +5,9 @@
   }
 
   input, textarea, select {
-    font:normal 14px/1.5em Arial, Helvetica, sans-serif;
     -webkit-border-radius:2px;
     border-radius:2px;
     padding:5px;
-    border:1px solid gray;
   }
 
   input[type="text"]:focus, 
@@ -26,10 +24,40 @@
     outline:0 none;
   }
 
+ /**
+  * Fix some width and height settings
+  */
+  input[type="file"] {
+    cursor:pointer;
+    display:block;
+  }
+
+  input[type="file"], 
+  input[type="image"], 
+  input[type="submit"], 
+  input[type="reset"], 
+  input[type="button"], 
+  input[type="radio"], 
+  input[type="checkbox"] {
+    width:auto;
+  }
+
+  textarea, 
+  select[multiple], 
+  select[size] {
+    height:auto;
+  }
+
   fieldset {
     border:0;
     padding:0;
     margin:0;
+  }
+
+  legend {
+    width:100%;
+    display:block;
+    border:0;
   }
 
   .entry {
