@@ -1,5 +1,128 @@
 @media screen, projection {
 
+ /**
+  * Standardize some basic elements
+  */
+  body, 
+  form {
+    margin:0;
+    padding:0;
+  }
+
+  img {
+    border:0;
+  }
+
+  header, 
+  footer, 
+  nav, 
+  section, 
+  aside, 
+  article, 
+  figure, 
+  figcaption {
+    display:block;
+  }
+
+ /**
+  * Clear floats
+  */
+  .block {
+    overflow:hidden;
+  }
+
+  .clear, #clear {
+    height:0.1px;
+    font-size:0.1px;
+    line-height:0.1px;
+    clear:both;
+  }
+
+ /**
+  * Hide invisible elements
+  */
+  .invisible {
+    width:0;
+    height:0;
+    left:-1000px;
+    top:-1000px;
+    position:absolute;
+    overflow:hidden;
+    display:inline;
+  }
+
+ /**
+  * Fix some positioning issues
+  */
+  #container,
+  .inside {
+    position:relative;
+  }
+
+ /**
+  * Custom layout sections
+  */
+  .custom {
+    display:block;
+  }
+
+  #container:after, 
+  .custom:after {
+    content:" ";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+  }
+
+ /**
+  * Responsive images
+  */
+  img {
+    max-width:100%;
+    height:auto;
+    width:auto;
+  }
+
+  .ie7 img {
+    -ms-interpolation-mode:bicubic;
+  }
+
+ /**
+  * Format the Contao image galleries (now rendered as unordered lists)
+  */
+  .ce_gallery ul {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    list-style:none;
+  }
+
+  .ce_gallery li {
+    float:left;
+  }
+
+  .ce_gallery li.col_first {
+    clear:left;
+  }
+
+ /*------------------------------------------------------------------------*/
+
+ /**
+  * Reset contao navigation styles
+  */
+  nav ul,
+  .mod_sitemap ul,
+  .pagination ul {
+    margin:0;
+    padding:0;
+  }
+
+ /*------------------------------------------------------------------------*/
+
+ /**
+  * General list styling
+  */
   .mod_article ul, 
   .mod_article ol { 
     list-style:disc; 
@@ -24,19 +147,6 @@
   .data span { 
     float:left;
     width:55px;
-  }
-
-  .main p {
-    padding:8px 0;
-  }
-  
- /*------------------------------------------------------------------------*/
-
-  nav ul,
-  .mod_sitemap ul,
-  .pagination ul {
-    margin:0;
-    padding:0;
   }
 
 }
