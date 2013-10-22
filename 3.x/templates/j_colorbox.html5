@@ -16,8 +16,8 @@ $GLOBALS['TL_CSS'][] = 'assets/jquery/colorbox/'. COLORBOX .'/css/colorbox.min.c
           rel: $(this).attr('data-lightbox'),
           maxWidth: '95%',
           maxHeight: '95%',
-          'width': (($(this).data('width') !== undefined) ? $(this).data('width') : false),
-          'height': (($(this).data('height') !== undefined) ? $(this).data('height') : false)
+          'innerWidth': (($(this).data('width') !== undefined) ? $(this).data('width') : false),
+          'innerHeight': (($(this).data('height') !== undefined) ? $(this).data('height') : false)
         });
       });
     });
