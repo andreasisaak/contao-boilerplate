@@ -109,18 +109,6 @@
  /*------------------------------------------------------------------------*/
 
  /**
-  * Reset contao navigation styles
-  */
-  nav ul,
-  .mod_sitemap ul,
-  .pagination ul {
-    margin:0;
-    padding:0;
-  }
-
- /*------------------------------------------------------------------------*/
-
- /**
   * General list styling
   */
   .mod_article ul, 
@@ -147,6 +135,18 @@
   .data span { 
     float:left;
     width:55px;
+  }
+
+ /*------------------------------------------------------------------------*/
+
+ /**
+  * Reset contao navigation styles
+  */
+  nav ul,
+  .mod_sitemap ul,
+  .pagination ul {
+    margin:0;
+    padding:0;
   }
 
 }
