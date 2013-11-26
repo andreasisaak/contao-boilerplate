@@ -38,6 +38,14 @@ if (!$this->User->isAdmin)
     $GLOBALS['TL_DCA']['tl_article']['fields']['teaser']['eval']['rte'] = 'tinyMCE_boilerplate';
 }
 
+/* if (!\BackendUser::getInstance()->isAdmin) {
+    foreach ((array) $GLOBALS['TL_HOOKS']['getSystemMessages'] as $k => $arrHook) { 
+        if ($arrHook[1] == 'versionCheck') { 
+            unset($GLOBALS['TL_HOOKS']['getSystemMessages'][$k]); 
+        } 
+    }
+} */
+
 // Remove the space fields
 // unset($GLOBALS['TL_DCA']['tl_article']['fields']['space']);
 // unset($GLOBALS['TL_DCA']['tl_content']['fields']['space']);
