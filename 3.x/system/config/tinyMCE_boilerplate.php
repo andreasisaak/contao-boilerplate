@@ -1,31 +1,13 @@
-<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2011 Leo Feyer
  *
- * Formerly known as TYPOlight Open Source CMS.
+ * Copyright (c) 2005-2013 Leo Feyer
  *
- * This program is free software: you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation, either
- * version 3 of the License, or (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * Lesser General Public License for more details.
- * 
- * You should have received a copy of the GNU Lesser General Public
- * License along with this program. If not, please visit the Free
- * Software Foundation website at <http://www.gnu.org/licenses/>.
- *
- * PHP version 5
- * @copyright  Leo Feyer 2005-2011
- * @author     Leo Feyer <http://www.contao.org>
- * @package    Config
- * @license    LGPL
- * @filesource
+ * @package Core
+ * @link    https://contao.org
+ * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
 
@@ -34,10 +16,10 @@
  * http://tinymce.moxiecode.com for more information.
  */
 if ($GLOBALS['TL_CONFIG']['useRTE']): ?>
-<script src="<?php echo $this->base; ?>plugins/tinyMCE/tiny_mce_gzip.js"></script>
+<script src="<?php echo $this->base; ?>assets/tinymce/tiny_mce_gzip.js"></script>
 <script>
 tinyMCE_GZ.init({
-  plugins : "advimage,autosave,directionality,emotions,inlinepopups,paste,save,searchreplace,spellchecker,style,tabfocus,table,template,typolinks,xhtmlxtras",
+  plugins : "advimage,autosave,directionality,emotions,inlinepopups,paste,save,searchreplace,style,tabfocus,table,template,typolinks,xhtmlxtras",
   themes : "advanced",
   languages : "<?php echo $this->language; ?>",
   disk_cache : false,
@@ -61,12 +43,11 @@ tinyMCE.init({
   cleanup_on_startup : true,
   save_enablewhendirty : true,
   save_on_tinymce_forms : true,
+  file_browser_callback : "TinyCallback.fileBrowser",
   init_instance_callback : "TinyCallback.getScrollOffset",
   advimage_update_dimensions_onchange : false,
-  external_image_list_url : "<?php echo TL_PATH; ?>/plugins/tinyMCE/plugins/typolinks/typoimages.php",
-  template_external_list_url : "<?php echo TL_PATH; ?>/plugins/tinyMCE/plugins/typolinks/typotemplates.php",
-  plugins : "advimage,autosave,directionality,emotions,inlinepopups,paste,save,searchreplace,spellchecker,style,tabfocus,table,template,typolinks,xhtmlxtras",
-  spellchecker_languages : "<?php echo $this->getSpellcheckerString(); ?>",
+  template_external_list_url : "<?php echo TL_PATH; ?>/assets/tinymce/plugins/typolinks/typotemplates.php",
+  plugins : "advimage,autosave,directionality,emotions,inlinepopups,paste,save,searchreplace,style,tabfocus,table,template,typolinks,xhtmlxtras",
   content_css : "<?php echo TL_PATH; ?>/system/themes/tinymce.css,<?php echo TL_PATH .'/'. $this->uploadPath; ?>/tinymce.css",
   event_elements : "a,div,h1,h2,h3,h4,h5,h6,img,p,span",
   extended_valid_elements : "q[cite|class|title],article,section,hgroup,figure,figcaption",
@@ -78,8 +59,8 @@ tinyMCE.init({
   theme_advanced_toolbar_align : "left",
   theme_advanced_statusbar_location : "bottom",
   theme_advanced_source_editor_width : "700",
-  theme_advanced_blockformats : "div,p,address,pre,h1,h2,h3,h4,h5,h6",
-  theme_advanced_buttons1 : "typolinks,unlink,separator,undo,redo,separator,code,separator,bold,italic,underline,separator,bullist,numlist",
+  theme_advanced_blockformats : "p,h2,h3,h4,h5",
+  theme_advanced_buttons1 : "formatselect,bold,italic,underline,separator,anchor,separator,typolinks,unlink,separator,image,typobox,separator,bullist,numlist,indent,outdent,separator,blockquote,separator,sub,sup,separator,abbr,separator,undo,redo,separator,removeformat,cleanup,separator,code",
   theme_advanced_buttons2 : "",
   theme_advanced_buttons3 : "",
   theme_advanced_font_sizes : "9px,10px,11px,12px,13px,14px,15px,16px,17px,18px,19px,20px,21px,22px,23px,24px"

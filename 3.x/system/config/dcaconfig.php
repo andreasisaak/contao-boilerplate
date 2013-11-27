@@ -21,9 +21,7 @@ $GLOBALS['TL_DCA']['tl_article']['list']['label']['format'] = '%s <span style="c
 // Narrow headlines
 $GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2', 'h3', 'h4', 'h5', 'h6', 'h1');
 
-// Import Backend-User
-$this->import('BackendUser', 'User');
-if (!$this->User->isAdmin)
+if (!\BackendUser::getInstance()->isAdmin)
 {
     $GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_boilerplate';
     $GLOBALS['TL_DCA']['tl_news']['fields']['teaser']['eval']['rte'] = 'tinyMCE_boilerplate';
