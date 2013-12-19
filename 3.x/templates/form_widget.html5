@@ -8,9 +8,7 @@
   <?php if ($this->label): ?>
         <label for="ctrl_<?php echo $this->id; ?>">
         <?php echo $this->label; ?>
-        <?php if ($this->mandatory): ?><span class="mandatory">*</span><?php endif; ?> 
-        </label>
-  <?php endif; ?>
-        <?php echo $this->generateWithError('true'); ?>
+        <?php if ($this->mandatory): ?><span class="mandatory">*</span><?php endif; ?>
+        </label><?php endif; ?><?php echo $this->generateWithError('true'); ?>
   </div>
 <?php endif; ?>
