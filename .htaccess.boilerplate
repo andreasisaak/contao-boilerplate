@@ -1,0 +1,11 @@
+## For more informations:
+ # https://github.com/contao/core/pull/4555
+ # https://github.com/contao/core/issues/5239
+
+## Uncomment to rewrite domain.com to www.domain.com
+ # RewriteCond %{HTTP_HOST} !^www\. [NC]
+ # RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+## Uncomment to rewrite www.domain.com to domain.com
+ # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+ # RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
