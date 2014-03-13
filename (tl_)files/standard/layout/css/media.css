@@ -13,6 +13,10 @@
     margin:0;
   }
 
+  .equalize > div {
+    display:block;
+  }
+
   .subcolumns .mod_colsetPart, 
   .subcolumns .ce_colsetPart, 
   .subcolumns .sc_second {
