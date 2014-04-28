@@ -137,6 +137,18 @@
     width:55px;
   }
 
+  /* 
+   * Use the new contao classes for image positioning
+   * See: https://github.com/contao/core/issues/6851 
+   */
+  .float_left {
+    float:left;
+  }
+
+ .float_right {
+    float:right;
+  }
+
  /*------------------------------------------------------------------------*/
 
  /**
