@@ -1,0 +1,15 @@
+@media screen, projection {
+
+  #cboxContent #wrapper {
+    overflow:hidden;
+  }
+
+  #cboxContent #wrapper,
+  #cboxContent #container,
+  #cboxContent #main,
+  #cboxContent #main .inside,
+  #cboxContent .mod_article {
+    height:100%;
+  }
+
+}
