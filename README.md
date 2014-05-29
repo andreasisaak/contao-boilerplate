@@ -31,6 +31,9 @@ Snippets
 ### header_code
 
 ```html
+<meta name="apple-mobile-web-app-title" content="{{page::rootTitle}}" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="no" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="msapplication-TileImage" content="{{env::path}}files/standard/win-8.png" />
 <meta name="msapplication-TileColor" content="#fff" />
@@ -73,6 +76,9 @@ Snippets
 ### header_code
 
 ```html
+<meta name="apple-mobile-web-app-title" content="{{page::rootTitle}}" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="no" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="msapplication-TileImage" content="{{env::path}}files/standard/win-8.png" />
 <meta name="msapplication-TileColor" content="#fff" />
