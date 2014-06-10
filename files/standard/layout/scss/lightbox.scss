@@ -1,0 +1,18 @@
+@media screen, projection {
+
+  #cboxContent {
+
+    #wrapper {
+      overflow:hidden;
+      height:100%;
+    }
+
+    #container,
+    #main,
+    #main .inside,
+    .mod_article {
+      height:100%;
+    }
+  }
+
+}
