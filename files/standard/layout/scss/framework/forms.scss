@@ -1,0 +1,133 @@
+@import "compass/css3";
+@import "compass/reset/utilities";
+
+@media screen, projection {
+
+  form br { 
+    display:none; 
+  }
+
+  input, textarea, select {
+    @include border-radius(2px);
+    padding:5px;
+  }
+
+  input[type="text"]:focus, 
+  input[type="password"]:focus, 
+  input[type="date"]:focus, 
+  input[type="datetime"]:focus, 
+  input[type="email"]:focus, 
+  input[type="number"]:focus, 
+  input[type="search"]:focus, 
+  input[type="tel"]:focus, 
+  input[type="time"]:focus, 
+  input[type="url"]:focus, 
+  textarea:focus {
+    outline:0 none;
+  }
+
+ /**
+  * Fix some width and height settings
+  */
+  input[type="file"] {
+    cursor:pointer;
+    display:block;
+  }
+
+  input[type="file"], 
+  input[type="image"], 
+  input[type="submit"], 
+  input[type="reset"], 
+  input[type="button"], 
+  input[type="radio"], 
+  input[type="checkbox"] {
+    width:auto;
+  }
+
+  textarea, 
+  select[multiple], 
+  select[size] {
+    height:auto;
+  }
+
+  fieldset {
+    @include reset-box-model;
+  }
+
+  legend {
+    width:100%;
+    display:block;
+    border:0;
+  }
+
+  .entry, .formbody > div {
+    margin-bottom:10px;
+
+    label {
+      width:100px;
+      display:inline-block;
+    }
+  }
+
+  .checkbox_container, 
+  .radio_container { 
+    margin-top:10px;
+
+    input {
+      width:auto;
+      vertical-align:middle;
+    }
+
+    label {
+      float:none;
+      display:inline;
+      vertical-align:middle;
+    }
+
+    span {
+      display:block; 
+    }
+
+    legend > span {
+      display:inline;
+    }
+
+  }
+
+  input.checkbox, 
+  input.radio { 
+    margin-right:3px;
+  }
+
+  span > input, 
+  input + label {
+    display:inline;
+  }
+
+  .captcha_text {
+    display:block;
+    float:none;
+  }
+
+  input {
+
+    &[type="checkbox"] {
+      top: -1px;
+      position: relative;
+    }
+
+    &[type="radio"] {
+      top: 2px;
+      position: relative;
+    }
+  }
+
+  x:-moz-any-link {
+    position: relative;
+  }
+
+  .submit_container { 
+    margin:10px 0;
+  }
+
+}

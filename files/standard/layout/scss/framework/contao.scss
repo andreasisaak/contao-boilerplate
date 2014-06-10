@@ -1,0 +1,148 @@
+@import "compass/reset/utilities";
+
+@media screen, projection {
+
+ /**
+  * Standardize some basic elements
+  */
+  body, 
+  form, 
+  img {
+    @include reset-box-model;
+  }
+
+ /**
+  * Clear floats
+  */
+  .block {
+    overflow:hidden;
+  }
+
+  .clear, #clear {
+    height:0.1px;
+    font-size:0.1px;
+    line-height:0.1px;
+    clear:both;
+  }
+
+ /**
+  * Hide invisible elements
+  */
+  .invisible {
+    width:0;
+    height:0;
+    left:-1000px;
+    top:-1000px;
+    position:absolute;
+    overflow:hidden;
+    display:inline;
+  }
+
+ /**
+  * Fix some positioning issues
+  */
+  #container,
+  .inside {
+    position:relative;
+  }
+
+ /**
+  * Custom layout sections
+  */
+  .custom {
+    display:block;
+  }
+
+  #container:after, 
+  .custom:after {
+    content:" ";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+  }
+
+ /**
+  * Responsive images
+  */
+  img {
+    max-width:100%;
+    height:auto;
+    width:auto;
+  }
+
+  .ie7 img {
+    -ms-interpolation-mode:bicubic;
+  }
+
+ /**
+  * Format the Contao image galleries (now rendered as unordered lists)
+  */
+  .ce_gallery {
+
+    ul {
+      @include reset-box-model;
+      overflow:hidden;
+      list-style:none;
+    }
+
+    li {
+      float:left;
+
+      &.col_first {
+        clear:left;
+      }
+    }
+  }
+
+ /*------------------------------------------------------------------------*/
+
+ /**
+  * General list styling
+  */
+  .mod_article {
+
+    ul, ol {
+      padding:0 0 0 20px;
+      margin:5px 10px 5px;
+    }
+
+    ul {
+      list-style:disc;
+    }
+
+    ol { 
+      list-style:decimal;
+    }
+
+    li { 
+      padding:1px 0;
+    }
+  }
+
+  .data {
+
+    ul { 
+      margin:5px 0;
+      padding-left:0;
+      list-style:none;
+    }
+
+    span {
+      float:left;
+      width:55px;
+    }
+  }
+
+ /*------------------------------------------------------------------------*/
+
+ /**
+  * Reset contao navigation styles
+  */
+  nav ul,
+  .mod_sitemap ul,
+  .pagination ul {
+    @include reset-box-model;
+  }
+
+}
