@@ -1,0 +1,141 @@
+@import "compass";
+@import "variables";
+@import "mixins/mixins";
+
+@media print {
+
+  * {
+    background:$color-white !important;
+    color:$color-black !important;
+    text-shadow: none !important;
+    @include reset-box-shadow;
+    @include reset-box-model;
+  }
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    @include reset-box-model;
+    @include reset-font;
+  }
+
+  img, object {
+    display:block;
+    @include reset-box-model;
+  }
+  
+  body {
+    width:100%;
+    text-align:left;
+    font:11pt Arial, Helvetica, sans-serif;
+    color:$color-black;
+    background-color:$color-white;
+    background-image:none;
+    @include reset-box-model;
+  }
+
+ /*------------------------------------------------------------------------*/
+
+ /**
+  * Hide and reset
+  */
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight:700;
+    margin:0.75em 0 0.5em;
+    text-align:left;
+    page-break-after:avoid;
+  }
+
+  h1 {
+    padding:0 0 0.5em;
+    border-bottom:1px solid $color-dusty-gray;
+  }
+
+  p {
+    margin:0.5em 0;
+    font-stretch:expanded;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content:" (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  
+  img {
+    padding:0.5em 0;
+    max-width: 100% !important;
+  }
+  
+ /*------------------------------------------------------------------------*/
+  
+  #header {
+    width:auto;
+    height:auto;
+  }
+  
+  footer, 
+  aside,
+  nav,
+  .pagination {
+    display:none;
+  }
+  
+  #main {
+    float:none;
+    width:auto;
+    margin:0;
+  }
+
+  .subcolumns {
+
+    .first, 
+    .mod_colsetPart, 
+    .sc_second {
+      float:none;
+      width:100%;
+      margin:0 !important;
+    }
+
+    .subcl,
+    .subcr,
+    .subc {
+      padding:0 !important;
+    }
+  }
+
+ /*------------------------------------------------------------------------*/
+
+  table {
+    width:100%;
+  }
+
+}
