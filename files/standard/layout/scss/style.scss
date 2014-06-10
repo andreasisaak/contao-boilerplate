@@ -1,4 +1,6 @@
-@import "compass/";
+@import "compass";
+@import "variables";
+@import "mixins/mixins";
 
 @media screen, projection {
 
@@ -31,11 +33,11 @@
   *[style~="margin"] { }
 
   a {
-    color:#000;
+    color:$color-black;
     text-decoration:underline;
 
     &:visited {
-      color: #000;
+      color:$color-black;
     }
 
     &:hover {
@@ -66,12 +68,12 @@
   input[type="time"]:focus, 
   input[type="url"]:focus, 
   textarea:focus {
-    background:none repeat scroll 0 0 #FCFCFC;
-    border:1px solid #999;
+    background:none repeat scroll 0 0 $color-alabaster;
+    border:1px solid $color-dusty-gray;
   }
 
   input, textarea, select {
-    border:1px solid gray;
+    border:1px solid $color-dusty-gray;
     font-family:Arial, Helvetica, sans-serif;
   }
 
@@ -131,7 +133,7 @@
   }
   
   nav li.submenu ul {
-    background-color:#fff;
+    background-color:$color-white;
     display:none;
     position:absolute;
     z-index:100;
