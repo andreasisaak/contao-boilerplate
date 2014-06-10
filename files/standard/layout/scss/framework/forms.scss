@@ -91,12 +91,6 @@
     legend > span {
       display:inline;
     }
-
-  }
-
-  input.checkbox, 
-  input.radio { 
-    margin-right:3px;
   }
 
   span > input, 
@@ -110,15 +104,18 @@
   }
 
   input {
+    position: relative;
 
-    &[type="checkbox"] {
+    &[type="checkbox"], 
+    &.checkbox {
       top: -1px;
-      position: relative;
+      margin-right:5px;
     }
 
-    &[type="radio"] {
+    &[type="radio"], 
+    &.radio {
       top: 2px;
-      position: relative;
+      margin-right:5px;
     }
   }
 
