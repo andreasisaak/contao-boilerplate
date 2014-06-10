@@ -10,7 +10,7 @@
   }
 
   body {
-    font:normal 12px/1.5 Arial, Helvetica, sans-serif;
+    font:normal 12px/1.5 $font-arial;
     height:100%;
     -webkit-text-size-adjust: none;
   }
@@ -41,11 +41,11 @@
     }
 
     &:hover {
-      text-decoration: none;
+      text-decoration:none;
     }
 
     &:focus {
-      outline: thin dotted;
+      outline:thin dotted;
     }
   }
 
@@ -74,7 +74,7 @@
 
   input, textarea, select {
     border:1px solid $color-dusty-gray;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:$font-arial;
   }
 
   .main p {
@@ -94,23 +94,23 @@
   }
 
   h1 {
-    /* 
+  /* 
     width:0px;
     height:0px; 
-    */
-  }
+   */
 
-  h1 a {
+    a {
     /*
-    display:block;
-    width:0px;
-    height:0px;
-    text-indent:-99999px;
-    @include background-image-retina('../images/logo', 'png', 0px, 0px);
-    background-color:transparent;
-    background-repeat:no-repeat;
-    background-position:center center;
-    */
+      display:block;
+      width:0px;
+      height:0px;
+      text-indent:-99999px;
+      @include background-image-retina('../images/logo', 'png', 0px, 0px);
+      background-color:transparent;
+      background-repeat:no-repeat;
+      background-position:center center;
+     */
+    }
   }
 
  /*------------------------------------------------------------------------*/
@@ -121,44 +121,46 @@
 
   nav {
 
-  }
+    ul {
 
-  nav ul {
+    }
 
-  }
+    li {
 
-  nav li {
+      .last {
 
-  }
+      }
 
-  nav li.last {
+      .submenu ul {
+        background-color:$color-white;
+        display:none;
+        position:absolute;
+        z-index:100;
 
-  }
-  
-  nav li.submenu ul {
-    background-color:$color-white;
-    display:none;
-    position:absolute;
-    z-index:100;
-  }
+        .hover, &:hover {
+          display:block;
+        }
+      }
 
-  nav li:hover ul, 
-  nav li:hover li, 
-  nav li.submenu ul.hover {
-    display:block;
-  }
+      .submenu li {
+        float:none;
+      }
 
-  nav li.submenu li {
-    float:none;
-  }
+      &:hover{
 
-  nav li a,
-  nav li span {
+        ul, li {
+          display:block;
+        }
+      }
 
-  }
+      a, span {
 
-  nav li .active {
+      }
 
+      .active {
+
+      }
+    }
   }
 
  /*------------------------------------------------------------------------*/
