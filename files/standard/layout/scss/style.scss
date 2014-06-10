@@ -103,10 +103,13 @@
   h1 a {
     /*
     display:block;
-    width:inherit;
-    height:inherit;
+    width:0px;
+    height:0px;
     text-indent:-99999px;
-    background:transparent url(../images/logo.png) no-repeat center center;
+    @include background-image-retina('../images/logo', 'png', 0px, 0px);
+    background-color:transparent;
+    background-repeat:no-repeat;
+    background-position:center center;
     */
   }
 
@@ -201,17 +204,6 @@
     }
 
     *zoom: 1;
-  }
-
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { 
-
-  h1 a {
-    /* 
-    background-size:0px 0px;
-    background-image:url(../images/logo@2x.jpg);
-    */
   }
 
 }
