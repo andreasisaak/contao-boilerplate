@@ -1,4 +1,5 @@
 @import "compass/reset/utilities";
+@import "compass/typography/lists/bullets";
 
 @media screen, projection {
 
@@ -81,9 +82,9 @@
   .ce_gallery {
 
     ul {
-      @include reset-box-model;
       overflow:hidden;
-      list-style:none;
+      @include reset-box-model;
+      @include no-bullet;
     }
 
     li {
@@ -125,7 +126,7 @@
     ul { 
       margin:5px 0;
       padding-left:0;
-      list-style:none;
+      @include no-bullet;
     }
 
     span {
