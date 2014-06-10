@@ -1,0 +1,33 @@
+ /*
+  * Example media queries
+  *
+  * max-width
+  * @include breakpoint(500)
+  * @media screen and (max-width: 500px)
+  *
+  * min-width
+  * @include breakpoint(500, min)
+  * @media screen and (min-width: 500px)
+  *
+  * min-width and max-width
+  * @include breakpoint(470 500)
+  * @media screen and (min-width: 470px) and (max-width: 500px)
+  */
+$media-direction: max;
+@mixin breakpoint($values,$direction: $media-direction) {
+  @if length($values) > 1 {
+    $min: nth($values,1);
+    $max: nth($values,2);
+
+    @if unitless($max) {$max: $max + 0px;}
+
+    @if unitless($min) {$min: $min + 0px}
+
+    @media screen and (min-width: $min) and (max-width: $max) {@content;}
+
+  } @else {
+    @if unitless($values) {$values: $values + 0px;}
+
+    @media only screen and (#{$direction}-width: $values) {@content;}
+  }
+}

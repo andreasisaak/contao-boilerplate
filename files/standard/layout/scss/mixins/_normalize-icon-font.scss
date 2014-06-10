@@ -1,0 +1,12 @@
+ /*
+  * Normalize the icon font
+  */
+@mixin normalize-icon-font($font-family) {
+  font-family:$font-family;
+  speak:none;
+  font-style:normal;
+  font-weight:normal;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+}
