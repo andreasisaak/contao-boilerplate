@@ -1,8 +1,17 @@
+@import "compass";
+
+
   /*
   * Font Settings
   */
 
 $font-arial				: "Arial", Helvetica, sans-serif;
+
+$base-font-size			: 12px;
+$base-line-height		: 20px;
+
+@include establish-baseline;
+
 
  /*
   * Color settings
@@ -13,6 +22,6 @@ $font-arial				: "Arial", Helvetica, sans-serif;
   */
 
 $color-white			: #ffffff;
+$color-alabaster		: darken($color-white, 2);
+$color-dusty-gray		: darken($color-white, 40);
 $color-black			: #000000;
-$color-dusty-gray		: #999999;
-$color-alabaster		: #fbfbfb;

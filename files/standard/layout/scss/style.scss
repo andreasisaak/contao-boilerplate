@@ -10,7 +10,8 @@
   }
 
   body {
-    font:normal 12px/1.5 $font-arial;
+    font-weight:normal;
+    font-family:$font-arial;
     height:100%;
     -webkit-text-size-adjust: none;
   }
