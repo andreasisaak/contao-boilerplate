@@ -31,3 +31,10 @@ line_comments = false
 
 # The cache_path is relative to the config.rb file and not the project_path or http_path.
 cache_path = 'system/tmp/.sass-cache'
+
+# Enable Debugging (Line Comments, FireSass)
+# Invoke from command line: compass watch -e development --force
+if environment == :development
+  line_comments = true
+  sass_options = { :debug_info => true }
+end
