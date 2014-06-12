@@ -1,8 +1,10 @@
  /*
   * Normalize the icon font
   */
-@mixin normalize-icon-font($font-family) {
-  font-family:$font-family;
+@mixin normalize-icon-font($font-family:"") {
+  @if $font-family {
+    font-family:'#{$font-family}';
+  }
   speak:none;
   font-style:normal;
   font-weight:normal;
