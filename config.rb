@@ -21,6 +21,8 @@ relative_assets = true
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
 
+# The cache_path is relative to the config.rb file and not the project_path or http_path.
+cache_path = 'system/tmp/.sass-cache'
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
