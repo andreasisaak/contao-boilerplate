@@ -1,5 +1,8 @@
 # Require any additional compass plugins here.
 
+# http://stackoverflow.com/a/15766439
+require "./remove-all-comments"
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "files/standard/layout/css"
