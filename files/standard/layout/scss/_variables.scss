@@ -26,3 +26,19 @@ $color-black			: #000000;
 
 $color-alabaster		: darken($color-white, 2);
 $color-dusty-gray		: darken($color-white, 40);
+
+
+ /*
+  * Icon settings
+  *
+  * How to use icon variables and the new map function:
+  * http://jaydenseric.com/blog/fun-with-sass-and-font-icons
+  *
+  * To use data types "maps", use the alpha version of Compass
+  * http://stackoverflow.com/questions/22515932/use-map-data-type-with-compass
+  */
+
+$icons: (
+  "icon1"				: "\f00a",
+  "icon2"				: "\f00c"
+);
