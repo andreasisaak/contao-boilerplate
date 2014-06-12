@@ -1,0 +1,12 @@
+@import "mixins/mixins";
+
+[class^="icon-"],
+[class*=" icon-"] {
+    @include iconfont('iconfont');
+}
+
+@each $name, $char in $icons {
+    .icon-#{$name}:before {
+        content: $char;
+    }
+}
