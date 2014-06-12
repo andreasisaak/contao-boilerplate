@@ -106,7 +106,7 @@
       width:0px;
       height:0px;
       text-indent:-99999px;
-      @include background-image-retina('../images/logo', 'png', 0px, 0px);
+      @include background-image-retina('logo', 'png', 0px, 0px);
       background-color:transparent;
       background-repeat:no-repeat;
       background-position:center center;
