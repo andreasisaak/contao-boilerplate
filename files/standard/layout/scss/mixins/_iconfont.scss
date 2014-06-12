@@ -1,0 +1,22 @@
+@import "normalize-icon-font";
+
+ /*
+  * For adding font icons to elements using CSS pseudo-elements
+  * 
+  * Based on the following tutorial:
+  * http://jaydenseric.com/blog/fun-with-sass-and-font-icons
+  */
+@mixin iconfont($font: "", $icon: false, $position: before) {
+    @if $position == both {
+        $position: 'before, &:after';
+    }
+    &:#{$position} {
+        @if $font {
+            @include normalize-icon-font(#{$font});
+        }
+        @if $icon {
+            content: "#{map-get($icons, $icon)}";
+        }
+        @content;
+    }
+}
