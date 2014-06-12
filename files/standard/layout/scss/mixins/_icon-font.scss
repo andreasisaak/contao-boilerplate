@@ -6,13 +6,13 @@
   * Based on the following tutorial:
   * http://jaydenseric.com/blog/fun-with-sass-and-font-icons
   */
-@mixin iconfont($font: "", $icon: false, $position: before) {
+@mixin icon-font($font: "", $icon: false, $position: before, $styles: true) {
     @if $position == both {
         $position: 'before, &:after';
     }
     &:#{$position} {
         @if $font {
-            @include normalize-icon-font(#{$font});
+            @include normalize-icon-font(#{$font}, $styles);
         }
         @if $icon {
             content: "#{map-get($icons, $icon)}";

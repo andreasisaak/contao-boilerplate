@@ -2,7 +2,7 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-    @include iconfont('iconfont');
+    @include icon-font('iconfont');
 }
 
 @each $name, $char in $icons {
