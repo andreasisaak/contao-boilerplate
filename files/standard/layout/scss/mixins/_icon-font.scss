@@ -5,6 +5,9 @@
   * 
   * Based on the following tutorial:
   * http://jaydenseric.com/blog/fun-with-sass-and-font-icons
+  *
+  * You need the compass alpha to use this mixin
+  * http://stackoverflow.com/questions/22515932/use-map-data-type-with-compass
   */
 @mixin icon-font($font: "", $icon: false, $position: before, $styles: true) {
     @if $position == both {
