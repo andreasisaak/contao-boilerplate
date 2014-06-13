@@ -5,12 +5,15 @@
   * Based on https://gist.github.com/twe4ked/1432554
   * 
   * How to use (without @content)
-  * @include background-image-retina('logo', 'png', 50px, 50px);
+  * @include background-image-retina('$file', '$type', $width, $height);
   *
   * How to use (with @content)
-  * @include background-image-retina('logo', 'png', 50px, 50px) {
+  * @include background-image-retina('$file', '$type', $width, $height) {
   *   background-color:transparent;
   * };
+  * 
+  * Real life example
+  * @include background-image-retina('logo', 'png', 50px, 50px);
   */
 @mixin background-image-retina($file, $type, $width, $height) {
   background-image: image-url($file + '.' + $type);

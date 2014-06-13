@@ -8,18 +8,21 @@
   *
   * You need the compass alpha to use this mixin
   * http://stackoverflow.com/questions/22515932/use-map-data-type-with-compass
+  * 
+  * How to use
+  * @include icon-font($font, [$icon], [$position], [$styles]);
   */
 @mixin icon-font($font: "", $icon: false, $position: before, $styles: true) {
     @if $position == both {
         $position: 'before, &:after';
     }
     &:#{$position} {
-        @if $font {
-            @include normalize-icon-font(#{$font}, $styles);
-        }
-        @if $icon {
-            content: "#{map-get($icons, $icon)}";
-        }
+      @if $font {
+        @include normalize-icon-font(#{$font}, $styles);
+      }
+      @if $icon {
+        content: "#{map-get($icons, $icon)}";
+      }
         @content;
     }
 }

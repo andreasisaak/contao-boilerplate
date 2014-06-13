@@ -1,5 +1,11 @@
  /*
   * Normalize the icon font
+  * 
+  * How to use
+  * @include normalize-icon-font($font-family, [$styles]);
+  * 
+  * Real life example (without styles)
+  * @include normalize-icon-font('Arial', false);
   */
 @mixin normalize-icon-font($font-family:"", $styles: true) {
   @if $font-family {
