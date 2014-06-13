@@ -37,5 +37,4 @@ cache_path = 'system/tmp/.sass-cache'
 if environment == :development
   line_comments = true
   output_style = :expanded
-  sass_options = { :debug_info => true }
 end
