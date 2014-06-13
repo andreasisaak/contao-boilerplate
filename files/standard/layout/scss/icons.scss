@@ -2,11 +2,11 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-    @include icon-font('iconfont');
+  @include icon-font('iconfont');
 }
 
 @each $name, $char in $icons {
-    .icon-#{$name}:before {
-        content: $char;
-    }
+  .icon-#{$name}:before {
+    content: $char;
+  }
 }
