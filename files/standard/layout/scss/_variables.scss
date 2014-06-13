@@ -5,10 +5,10 @@
   * Font Settings
   */
 
-$font-arial				: "Arial", Helvetica, sans-serif;
+$font-arial         : "Arial", Helvetica, sans-serif;
 
-$base-font-size			: 12px;
-$base-line-height		: 20px;
+$base-font-size     : 12px;
+$base-line-height   : 20px;
 
 @include establish-baseline;
 
@@ -21,11 +21,11 @@ $base-line-height		: 20px;
   * http://chir.ag/projects/name-that-color/
   */
 
-$color-white			: #ffffff;
-$color-black			: #000000;
+$color-white        : #ffffff;
+$color-black        : #000000;
 
-$color-alabaster		: darken($color-white, 2);
-$color-dusty-gray		: darken($color-white, 40);
+$color-alabaster    : darken($color-white, 2);
+$color-dusty-gray   : darken($color-white, 40);
 
 
  /*
@@ -39,6 +39,6 @@ $color-dusty-gray		: darken($color-white, 40);
   */
 
 $icons: (
-  "icon1"				: "\f00a",
-  "icon2"				: "\f00c"
+  "icon1"           : "\f00a",
+  "icon2"           : "\f00c"
 );
