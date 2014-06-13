@@ -21,7 +21,7 @@ output_style = :compressed
 # Set specific rules only in development mode
 # How to use: 
 # https://gist.github.com/andreasisaak/814f251192828eb295b5
-environment = :development
+environment = :production
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
@@ -35,6 +35,6 @@ cache_path = 'system/tmp/.sass-cache'
 # Enable Debugging (Line Comments, FireSass)
 # Invoke from command line: compass watch -e development --force
 if environment == :development
-  line_comments = true
   output_style = :expanded
+  line_comments = true
 end
