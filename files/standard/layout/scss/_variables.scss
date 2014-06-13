@@ -1,14 +1,17 @@
 @import "compass";
+@import "functions/functions";
 
 
-  /*
+ /*
   * Font Settings
   */
 
-$font-arial         : "Arial", Helvetica, sans-serif;
+$font-arial                  : "Arial", Helvetica, sans-serif;
 
-$base-font-size     : 12px;
-$base-line-height   : 20px;
+$base-font-size              : 12px;
+$base-line-height            : 20px;
+$base-line-height-headlines  : (strip-units($base-line-height) / strip-units($base-font-size));
+$round-to-nearest-half-line  : true;
 
 @include establish-baseline;
 

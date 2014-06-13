@@ -1,0 +1,10 @@
+ /*
+  * Strip units from all numbers
+  * 
+  * Based on the following ticket:
+  * https://github.com/sass/sass/issues/533
+  */
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}

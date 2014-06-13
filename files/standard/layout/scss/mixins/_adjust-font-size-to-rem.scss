@@ -1,0 +1,18 @@
+@import "variables";
+
+ /*
+  * Convert absolute font sizes to rem with px fallback
+  * 
+  * How to use
+  * @include adjust-font-size-to-rem($font-size, [$line-height]);
+  */
+@mixin adjust-font-size-to-rem($font-size: 1.6, $line: $font-size * $base-line-height-headlines){
+  $font-size : strip-units($font-size);
+  $line : strip-units($line);
+  $base-font-size-unitless: strip-units($base-font-size);
+
+  font-size: ($font-size * 1) + px;
+  line-height: ($line * 1) + px;
+  font-size: (($font-size * 1) / $base-font-size-unitless) + rem;
+  line-height: ($line / 10) + rem;
+}
