@@ -6,6 +6,7 @@
 }
 
 @each $name, $char in $icons {
+  .standalone.icon-#{$name},
   .icon-#{$name}:before {
     content: $char;
   }
